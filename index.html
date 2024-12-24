@@ -3,9 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Versão Final - Desafio QSE</title>
+  <title>Landing Page - Desafio QSE</title>
   <link rel="stylesheet" href="styles.css">
-  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
   <!-- Cabeçalho Fixo -->
@@ -14,8 +13,8 @@
   </header>
 
   <!-- Bloco 1: Sustentabilidade Nível 1 -->
-  <section class="block sustainability">
-    <h2><i class="fas fa-leaf"></i> 🌱 Sustentabilidade </h2>
+  <section id="sustentabilidade" class="block sustainability">
+    <h2>🌱 Sustentabilidade Nível 1</h2>
     <div class="carousel">
       <iframe src="https://www.youtube.com/embed/yNIZR1pUKAw" title="Vídeo 1"></iframe>
       <iframe src="https://www.youtube.com/embed/JPSYAZ6XlO8" title="Vídeo 2"></iframe>
@@ -24,8 +23,8 @@
   </section>
 
   <!-- Bloco 2: Boas Práticas de Fabricação -->
-  <section class="block practices">
-    <h2><i class="fas fa-cogs"></i> 🏭 Boas Práticas de Fabricação</h2>
+  <section id="boas-praticas" class="block practices">
+    <h2>🏭 Boas Práticas de Fabricação Nível 2</h2>
     <div class="carousel">
       <iframe src="https://www.youtube.com/embed/Eh1R31mXU1k" title="Vídeo 1"></iframe>
       <iframe src="https://www.youtube.com/embed/RUr0qAcM2u4" title="Vídeo 2"></iframe>
@@ -35,19 +34,17 @@
 
   <!-- Menu Inferior Fixo -->
   <nav class="menu">
-    <button class="menu-item" title="Home">
-      <i class="fas fa-home"></i>
-    </button>
-    <button class="menu-item" title="Sustentabilidade">
-      <i class="fas fa-leaf"></i>
-    </button>
-    <button class="menu-item" title="Boas Práticas">
-      <i class="fas fa-cogs"></i>
-    </button>
-    <button class="menu-item" title="Desafio QSE">
-      <i class="fas fa-edit"></i>
-    </button>
+    <a href="#home" class="nav-icon" title="Home">🏠</a>
+    <a href="#sustentabilidade" class="nav-icon" title="Sustentabilidade">🌱</a>
+    <a href="#boas-praticas" class="nav-icon" title="Boas Práticas">🏭</a>
+    <a href="#formulario" class="nav-icon" title=" Desafio QSE">📝</a>
   </nav>
+
+  <!-- Formulário -->
+  <section id="formulario" class="block form-section">
+    <h2>📝 Participe do Desafio QSE</h2>
+    <iframe src="https://forms.office.com/r/7j1SaeVL8A?embed=true" frameborder="0" style="width: 100%; height: 400px;"></iframe>
+  </section>
 
   <script src="script.js"></script>
 </body>
