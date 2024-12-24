@@ -4,7 +4,6 @@
   --text-color: rgb(255, 255, 255);
   --highlight-color: rgb(50, 255, 100);
   --secondary-color: rgb(20, 20, 20);
-  --button-hover-color: rgb(255, 255, 255);
 }
 
 /* Estilo global */
@@ -60,6 +59,10 @@ header {
   border-top: 3px solid var(--secondary-color);
 }
 
+.form-section {
+  margin-bottom: 80px;
+}
+
 .carousel {
   display: flex;
   gap: 10px;
@@ -89,30 +92,20 @@ nav.menu {
   z-index: 1000;
 }
 
-.menu-item {
-  background-color: var(--highlight-color);
-  color: var(--background-color);
-  border: none;
-  padding: 10px;
-  border-radius: 50%;
-  width: 50px;
-  height: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 20px;
-  cursor: pointer;
-  transition: transform 0.2s, background-color 0.2s;
+.nav-icon {
+  color: var(--text-color);
+  font-size: 24px;
+  text-decoration: none;
+  transition: transform 0.2s, color 0.2s;
 }
 
-.menu-item:hover {
-  background-color: var(--button-hover-color);
+.nav-icon:hover {
+  color: var(--highlight-color);
+  transform: scale(1.2);
+}
+
+.nav-icon:active {
   transform: scale(1.1);
-}
-
-.menu-item:active {
-  background-color: var(--highlight-color);
-  transform: scale(0.95);
 }
 
 /* Responsividade */
@@ -127,9 +120,7 @@ nav.menu {
     height: 120px;
   }
 
-  .menu-item {
-    width: 40px;
-    height: 40px;
-    font-size: 16px;
+  .nav-icon {
+    font-size: 20px;
   }
 }
